@@ -2,11 +2,18 @@ body {
     background-color: #141228;
     margin: 0px;
     padding: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5cm;
 }
 
 .heading-container{
     display: flex;
-   
     justify-content: center;
 }
 
@@ -14,5 +21,52 @@ body {
     color: #FFFFFF;
     font-size: 60px;
     margin: 0px;
-    margin-top: 5cm;
 }
+
+.InputFieldsContainer{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.userIField{
+    display: flex;
+    width: 350px; 
+    height: 50px;
+    border-radius: 8px;
+    background-color: #000000;
+    opacity: 0.25;
+}
+
+#usernamePlaceholder{
+    display: flex;
+    align-self: center;
+    margin-left: 15px;
+    margin-bottom: 22px;
+    color: #FFFFFF;
+    font-size: 20px;
+    opacity: 0.25;
+}
+
+.passwordIField{
+    margin-top: 13px;
+    display: flex;
+    width: 350px; 
+    height: 50px;
+    border-radius: 8px;
+    background-color: #000000;
+    opacity: 0.25;
+}
+
+#passwordPlaceholder{
+    display: flex;
+    align-self: center;
+    margin-left: 15px;
+    margin-bottom: 22px;
+    color: #FFFFFF;
+    font-size: 20px;
+    opacity: 0.25;
+}
+
