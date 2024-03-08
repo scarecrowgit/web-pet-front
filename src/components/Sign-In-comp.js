@@ -14,6 +14,10 @@ const SignInComp = () => {
         setpassword(e.target.value);
     };
     
+    const handleClick = () => {
+        console.log('Button clicked!');
+        /* TODO */
+      };
     
     return (
     <body>
@@ -40,7 +44,8 @@ const SignInComp = () => {
                 </div>
             </div>
             <div className='buttonContainer'>
-                
+                <button id='loginButton' onClick={handleClick}></button>
+                <p id='buttonPlaceholder'>LOG IN</p>
             </div>
         </div>
     </body>

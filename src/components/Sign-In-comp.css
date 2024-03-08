@@ -10,6 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     margin-top: 5cm;
+    justify-content: center;
 }
 
 .heading-container{
@@ -121,4 +122,33 @@ body {
 
 #password:focus{
     outline: none;
+}
+
+.buttonContainer{
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-top: 15px;
+    margin-left: 100px;
+    width: 150px;
+    height: 40px;
+    background-color: rgba(72, 42, 101, 0.5);
+}
+
+#loginButton{
+    position: relative;
+    width: 150px;
+    height: 40px;
+    background-color: #482A65;
+    opacity: 0;
+}
+
+#buttonPlaceholder{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    position: absolute;
+    color: #FFFFFF;
+    margin: 0;
 }
