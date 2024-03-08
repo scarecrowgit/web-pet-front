@@ -1,17 +1,55 @@
 import './Sign-In-comp.css';
-import React from 'react';
+import React, {useState} from 'react';
 
-class SignInComp extends React.Component {
-    render() {
-      return (
-        <body>
+
+const SignInComp = () => {
+    const [username, setusername] = useState('');
+    const [password, setpassword] = useState('');
+
+    const handleUsernameChange = (e) => {
+        setusername(e.target.value);
+      };
+
+    const handlePasswordChange = (e) => {
+        setpassword(e.target.value);
+    };
+    
+    const handleClick = () => {
+        console.log('Button clicked!');
+        /* TODO */
+      };
+    
+    return (
+    <body>
+        <div className='mainContainer'>
             <div className='heading-container'>
                 <h1 id="heading">SIGN IN</h1>
             </div>
-          
-        </body>
-      );
-    }
+            <div className='InputFieldsContainer'>
+                <div className='usernameField'>
+                    <div className='userIField'>
+                        <input type="text" value = { username } id="username" onChange={handleUsernameChange}/>
+                        {username === '' && (
+                            <p id="usernamePlaceholder">{'username'}</p>
+                        )}
+                    </div>
+                </div>
+                <div className='passwordField'>
+                    <div className='passwordIField'>
+                        <input type="text" value = { password } id="password" onChange={handlePasswordChange}/>
+                        {password === '' && (
+                            <p id="passwordPlaceholder">{'password'}</p>
+                        )}
+                    </div>
+                </div>
+            </div>
+            <div className='buttonContainer'>
+                <button id='loginButton' onClick={handleClick}></button>
+                <p id='buttonPlaceholder'>LOG IN</p>
+            </div>
+        </div>
+    </body>
+    );
   }
 
   export default SignInComp;

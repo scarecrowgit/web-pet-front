@@ -1,18 +1,154 @@
 body {
-    background-color: #141228;
+    background-color: #000000;
     margin: 0px;
     padding: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5cm;
+    justify-content: center;
 }
 
 .heading-container{
     display: flex;
-   
     justify-content: center;
 }
 
 #heading {
     color: #FFFFFF;
+    pointer-events: none;
     font-size: 60px;
     margin: 0px;
-    margin-top: 5cm;
+}
+
+.InputFieldsContainer{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.userIField{
+    display: flex;
+    width: 350px; 
+    height: 50px;
+    border-radius: 8px;
+    background-color: #482A65;
+    opacity: 0.50;
+}
+
+#usernamePlaceholder{
+    display: flex;
+    align-self: center;
+    position: absolute;
+    pointer-events: none;
+    margin-left: 15px;
+    margin-bottom: 22px;
+    color: #FFFFFF;
+    font-size: 20px;
+    opacity: 0.25;
+}
+
+.passwordIField{
+    margin-top: 13px;
+    display: flex;
+    width: 350px; 
+    height: 50px;
+    border-radius: 8px;
+    background-color: #482A65;
+    opacity: 0.5;
+}
+
+#passwordPlaceholder{
+    display: flex;
+    align-self: center;
+    position: absolute;
+    pointer-events: none;
+    margin-left: 15px;
+    margin-bottom: 22px;
+    color: #FFFFFF;
+    font-size: 20px;
+    opacity: 0.25;
+}
+
+#username{
+    display: flex;
+    position: relative;
+    width: 337px; 
+    margin-left: 13px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+#username:focus + #usernamePlaceholder{
+    opacity: 0;
+}
+
+#username:focus {
+    outline: none;
+}
+
+#username:active + #usernamePlaceholder{
+    opacity: 0;
+}
+
+#password{
+    display: flex;
+    position: relative;
+    width: 337px; 
+    margin-left: 13px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+#password:focus + #passwordPlaceholder{
+    opacity: 0;
+}
+
+#password:active{
+    opacity: 0;
+}
+
+#password:focus{
+    outline: none;
+}
+
+.buttonContainer{
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-top: 15px;
+    margin-left: 100px;
+    width: 150px;
+    height: 40px;
+    background-color: rgba(72, 42, 101, 0.5);
+}
+
+#loginButton{
+    position: relative;
+    width: 150px;
+    height: 40px;
+    background-color: #482A65;
+    opacity: 0;
+}
+
+#buttonPlaceholder{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    position: absolute;
+    color: #FFFFFF;
+    margin: 0;
 }
