@@ -1,4 +1,5 @@
-React App on pet project (not interesting thing)
+React App for pet project (not interesting thing)
+You can use it like example of login system (in future)
 
 WIP
 
